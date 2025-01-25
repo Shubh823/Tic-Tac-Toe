@@ -33,7 +33,7 @@ boxes.forEach((box) =>{
         box.disabled=true;
         cheackwinner();
         if(count===9){
-            alert("hekko");
+            cheackwinner();
             dis.classList.remove("hiden");
             msg.innerText="sorry the match was tie";
           }
