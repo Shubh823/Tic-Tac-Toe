@@ -33,9 +33,12 @@ boxes.forEach((box) =>{
         box.disabled=true;
         cheackwinner();
         if(count===9){
-            cheackwinner();
+            if(cheackwinner()){
+            console.log("tie")
+            }else{
             dis.classList.remove("hiden");
             msg.innerText="sorry the match was tie";
+            }
           }
     })
 })
@@ -61,6 +64,7 @@ const cheackwinner =()=>{
             }
         }
       }
+      return true;
     }
     
     
